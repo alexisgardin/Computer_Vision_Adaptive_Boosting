@@ -11,7 +11,6 @@
 test/*
 bg.txt
 info.dat
-result.png
 training/*
 .DS_Store
 .idea/*

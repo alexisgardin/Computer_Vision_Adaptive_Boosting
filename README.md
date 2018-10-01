@@ -3,7 +3,7 @@
 Script for training and testing on Fashion Mnist dataset for Machine learning purpose
 Based on https://docs.opencv.org/3.4/dc/d88/tutorial_traincascade.html tutorial
 
-<img src="https://alexisgardin.com/result" width="100%">
+<img src="result.png" width="100%">
 
 # Prepare test and training data
 Generate training and testing image from fashion mnist byte file
