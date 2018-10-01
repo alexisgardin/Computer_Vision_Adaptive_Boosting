@@ -1,3 +1,4 @@
+# coding: utf-8
 import numpy as np
 import os
 import cv2 as cv
@@ -35,6 +36,7 @@ if __name__ == '__main__':
     parser.add_argument('--cascade', default="training/cascade.xml")
     parser.add_argument('--labels', default=0)
     args = parser.parse_args()
+    print(args.cascade)
     cascade = cv.CascadeClassifier(args.cascade)
     data = []
     dataFinal = []
@@ -46,7 +48,8 @@ if __name__ == '__main__':
             img = cv.imread(file_path)
             gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
             rects = detect(gray, cascade)
-            if i == args.label:
+            print(i == args.labels)
+            if i == int(args.labels):
                 if len(rects) == 0:
                     draw_rects(img, rects, FALSE_NEGATIVE)
                     FN = FN + 1

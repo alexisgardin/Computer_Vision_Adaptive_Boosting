@@ -8,7 +8,7 @@ Based on https://docs.opencv.org/3.4/dc/d88/tutorial_traincascade.html tutorial
 # Prepare test and training data
 Generate training and testing image from fashion mnist byte file
 ```
-python fashionGenerateImage.py
+python3 fashionGenerateImage.py
 ```
 Generate info.dat for positive sample  and bg.txt for negative sample with the command **labels** which allow you to choose what you want to detect
 ### Labels
@@ -28,7 +28,7 @@ Each training and test example is assigned to one of the following labels:
 | 9 | Ankle boot |
 ### Example for T-shirt :
 ```
-python fashionGenerateImage.py --labels 0
+python3 fashionGenerateImage.py --labels 0
 ```
 ### Create positive sample
 ```
@@ -54,7 +54,7 @@ And a file **result.png**
 
 ### Example
 ```
-python testCascade.py --labels 0 --cascade /path/to/your/cascade
+python3 testCascade.py --labels 0 --cascade /path/to/your/cascade
 ```
 Default value :
 
